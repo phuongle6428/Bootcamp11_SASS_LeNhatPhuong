@@ -1,0 +1,37 @@
+#Featured_Products {
+    background-color: $color-white-1;
+    padding: $pd-7 0;
+    #FP_Title {
+        text-align: center;
+        padding: $pd-1 0;
+    }
+    #FP_containBox > div {
+        @mixin box_shadow() {
+            box-shadow: 5px 5px 10px $color-blue-3, -5px -5px 15px $color-white-3;
+        }
+        .FP_itemBox {
+            @include box_shadow;
+            padding: $pd-1;
+            font-size: $fs-1;
+            .FP_itemBox_itemImg {
+                @include box_shadow;
+            }
+            .FT_iB_itemName {
+                font-weight: $fw-2;
+                font-size: $fs-2;
+            }
+            .FT_iB_itemRates {
+                color: $color-yellow-1;
+            }
+            .FT_iB_itemShopbtn {
+                @include box_shadow;
+                font-size: $fs-1;
+                color: $color-blue-2;
+                transition: all 0.1s;
+                &:hover {
+                    box-shadow: -1px -1px 2px $color-blue-3, 1px 1px 2px $color-white-3;
+                }
+            }
+        }
+    }
+}

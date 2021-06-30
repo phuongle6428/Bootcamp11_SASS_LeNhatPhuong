@@ -1,0 +1,15 @@
+footer {
+    background-color: $color-blue-2;
+    .container {
+        padding-top: $pd-7;
+        padding-bottom: $pd-7;
+        color: $color-white-3;
+        .list-inline-item {
+            margin-left: $mg-2;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+        }
+    }
+}
